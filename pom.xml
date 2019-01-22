@@ -17,8 +17,8 @@
     <modules>
         <!--<module>hallserver</module>-->
         <!--<module>webserver</module>-->
-        <!--<module>core</module>-->
-        <!--<module>yingsanzhangserver</module>-->
+        <module>mywuwu-core</module>
+        <module>mywuwu-yingsanzhang</module>
         <!--<module>data</module>-->
         <module>mywuwu-cardlib</module>
     </modules>
