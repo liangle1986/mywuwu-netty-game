@@ -19,8 +19,7 @@
         <module>mywuwu-core</module>
         <module>mywuwu-hall</module>
         <module>mywuwu-web</module>
-        <!--<module>data</module>-->
-        <!--<module>mywuwu-cardlib</module>-->
+        <module>mywuwu-yingsanzhang</module>
     </modules>
 
     <properties>
@@ -33,9 +32,8 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
