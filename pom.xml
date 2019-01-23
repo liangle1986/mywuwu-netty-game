@@ -15,19 +15,21 @@
     <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
     <modules>
-        <!--<module>hallserver</module>-->
-        <!--<module>webserver</module>-->
+        <module>mywuwu-card</module>
         <module>mywuwu-core</module>
-        <module>mywuwu-yingsanzhang</module>
+        <module>mywuwu-hall</module>
+        <module>mywuwu-web</module>
         <!--<module>data</module>-->
-        <module>mywuwu-cardlib</module>
+        <!--<module>mywuwu-cardlib</module>-->
     </modules>
+
     <properties>
         <!--<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -57,11 +59,11 @@
                 <artifactId>lombok</artifactId>
                 <version>1.18.4</version>
             </dependency>
-            <!--<dependency>-->
-                <!--<groupId>com.typesafe.akka</groupId>-->
-                <!--<artifactId>akka-actor_2.12</artifactId>-->
-                <!--<version>2.5.18</version>-->
-            <!--</dependency>-->
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-actor_2.12</artifactId>
+                <version>2.5.18</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-io</artifactId>
