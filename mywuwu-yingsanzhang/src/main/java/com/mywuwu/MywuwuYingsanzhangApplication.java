@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.scheduling.annotation.EnableAsync;
 
-@SpringBootApplication(scanBasePackages = {"com.mywuwu.yingsanzhang", "com.mywuwu.core"})
+@SpringBootApplication
+//        (scanBasePackages = {"com.mywuwu.yingsanzhang", "com.mywuwu.core"})
 //,exclude = DataSourceAutoConfiguration.class)
 //@EnableMongoRepositories("com.mywuwu.data") , "com.mywuwu.data"
 @EnableAsync
