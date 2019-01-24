@@ -14,9 +14,4 @@ import lombok.NoArgsConstructor;
 public class A1004Response {
     private YingSanZhangPlayer yingSanZhangPlayers;
     private String roomNumber;
-
-    public A1004Response(YingSanZhangPlayer yingSanZhangPlayers, String roomNumber) {
-        this.yingSanZhangPlayers = yingSanZhangPlayers;
-        this.roomNumber = roomNumber;
-    }
 }

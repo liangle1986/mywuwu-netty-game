@@ -15,24 +15,4 @@ public class A1002Request implements RoomMessage {
     private String name;
     GameWebSocketSession session;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public GameWebSocketSession getSession() {
-        return session;
-    }
-
-    public void setSession(GameWebSocketSession session) {
-        this.session = session;
-    }
-
-    public A1002Request(String name, GameWebSocketSession session) {
-        this.name = name;
-        this.session = session;
-    }
 }

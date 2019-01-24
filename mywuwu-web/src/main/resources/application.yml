@@ -1,22 +1,40 @@
+#tomcat访问端口
+server:
+  port: 8078
 spring:
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-  redis:
-    host: localhoost
-    port: 8888
-    password: 00
+#  data:
+#    mongodb:
+#      host: localhost
+#      port: 27017
+  #redis配置
+    redis:
+    # Redis数据库索引（默认为0）
+      database: 1
+      # Redis服务器地址
+      host: 192.168.6.122
+    # Redis服务器连接密码（默认为空）
+      password:
+    # Redis服务器连接端口
+      port: 6379
+      timeout: 360s # 连接超时时间（毫秒）
+      lettuce:
+        pool:
+          max-active:  100 # 连接池最大连接数（使用负值表示没有限制）
+          max-idle: 100 # 连接池中的最大空闲连接
+          min-idle: 50 # 连接池中的最小空闲连接
+          max-wait: 600s # 连接池最大阻塞等待时间（使用负值表示没有限制）
+
+
 game:
   servers:
-    - ip: localhost
+    - ip: 192.168.6.248
       port: 8083
-      name: ������1
-      path: hall
-    - ip: localhost
+      name: hallserver
+#      path: hall
+    - ip: 192.168.6.248
       port: 8083
-      name: ������2
-      path: hall
+      name: hallserver1
+#      path: hall
 jwt:
-  secret: ASDF1234a
+  secret: MYWUWU123
   expiration: 120000

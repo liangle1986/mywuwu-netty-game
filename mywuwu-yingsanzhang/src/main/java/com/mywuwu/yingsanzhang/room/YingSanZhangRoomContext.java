@@ -73,12 +73,4 @@ public class YingSanZhangRoomContext extends RoomContext {
             }
         }
     }
-
-    public YingSanZhangPoker getPoker() {
-        return poker;
-    }
-
-    public void setPoker(YingSanZhangPoker poker) {
-        this.poker = poker;
-    }
 }

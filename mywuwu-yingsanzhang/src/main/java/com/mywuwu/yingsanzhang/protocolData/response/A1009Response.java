@@ -20,7 +20,4 @@ import lombok.NoArgsConstructor;
 public class A1009Response {
     YingSanZhangPlayer player;
 
-    public A1009Response(YingSanZhangPlayer player) {
-        this.player = player;
-    }
 }

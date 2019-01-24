@@ -7,7 +7,7 @@
         <artifactId>mywuwu-netty-game</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.mywuwu.web</groupId>
+    <groupId>com.mywuwu</groupId>
     <artifactId>mywuwu-web</artifactId>
 
     <dependencies>
@@ -17,12 +17,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.mywuwu.core</groupId>
+            <groupId>com.mywuwu</groupId>
             <artifactId>mywuwu-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -31,12 +31,16 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.mywuwu</groupId>-->
+            <!--<artifactId>mywuwu-data</artifactId>-->
+            <!--<version>0.0.1-SNAPSHOT</version>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>com.mywuwu.data</groupId>
-            <artifactId>mywuwu-data</artifactId>
+            <groupId>com.mywuwu</groupId>
+            <artifactId>mywuwu-mysql</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
 
     </dependencies>
 

@@ -14,25 +14,4 @@ import lombok.NoArgsConstructor;
 public class A1001Request implements RoomMessage {
     private GameWebSocketSession session;
     private String roomNumber;
-
-    public GameWebSocketSession getSession() {
-        return session;
-    }
-
-    public void setSession(GameWebSocketSession session) {
-        this.session = session;
-    }
-
-    public String getRoomNumber() {
-        return roomNumber;
-    }
-
-    public void setRoomNumber(String roomNumber) {
-        this.roomNumber = roomNumber;
-    }
-
-    public A1001Request(GameWebSocketSession session, String roomNumber) {
-        this.session = session;
-        this.roomNumber = roomNumber;
-    }
 }

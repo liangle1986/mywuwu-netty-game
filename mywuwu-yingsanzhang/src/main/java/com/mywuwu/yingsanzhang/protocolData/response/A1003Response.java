@@ -13,7 +13,4 @@ import lombok.NoArgsConstructor;
 public class A1003Response {
     private String roomId;
 
-    public A1003Response(String roomId) {
-        this.roomId = roomId;
-    }
 }

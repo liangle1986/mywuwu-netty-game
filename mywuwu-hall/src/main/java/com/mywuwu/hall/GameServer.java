@@ -19,7 +19,7 @@ import java.util.Optional;
  * @Description:
  */
 @Component
-@ServerEndpoint(prefix = "netty-websocket")
+@ServerEndpoint (prefix = "netty-websocket")
 public class GameServer extends GameWebSocket {
 
     @Autowired

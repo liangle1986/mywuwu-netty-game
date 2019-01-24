@@ -25,13 +25,4 @@ public class GuestResponse {
 
     private List<GameServerList> gameServerLists;
 
-    public GuestResponse(Long id, String name, String nickName, String token, double balance, int cardNumber, List<GameServerList> gameServerLists) {
-        this.id = id;
-        this.name = name;
-        this.nickName = nickName;
-        this.token = token;
-        this.balance = balance;
-        this.cardNumber = cardNumber;
-        this.gameServerLists = gameServerLists;
-    }
 }

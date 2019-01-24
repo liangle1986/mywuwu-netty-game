@@ -15,8 +15,4 @@ public class A1008Response {
     YingSanZhangPlayer player;
     YingSanZhangPlayer toPlayer;
 
-    public A1008Response(YingSanZhangPlayer player, YingSanZhangPlayer toPlayer) {
-        this.player = player;
-        this.toPlayer = toPlayer;
-    }
 }

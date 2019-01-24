@@ -15,8 +15,4 @@ public class A1005Response {
     private YingSanZhangPlayer[] gameWebSocketSessions;
     private YingSanZhangPlayer yingSanZhangPlayer;
 
-    public A1005Response(YingSanZhangPlayer[] gameWebSocketSessions, YingSanZhangPlayer yingSanZhangPlayer) {
-        this.gameWebSocketSessions = gameWebSocketSessions;
-        this.yingSanZhangPlayer = yingSanZhangPlayer;
-    }
 }

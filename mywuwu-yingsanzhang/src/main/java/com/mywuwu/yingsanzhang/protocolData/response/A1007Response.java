@@ -16,9 +16,4 @@ public class A1007Response {
     String type;
     double chip;
 
-    public A1007Response(YingSanZhangPlayer player, String type, double chip) {
-        this.player = player;
-        this.type = type;
-        this.chip = chip;
-    }
 }

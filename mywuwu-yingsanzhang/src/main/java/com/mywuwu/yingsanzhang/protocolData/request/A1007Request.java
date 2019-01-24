@@ -17,35 +17,4 @@ public class A1007Request implements RoomMessage {
     double chip;
     String type;
 
-    public String getRoomId() {
-        return roomId;
-    }
-
-    public void setRoomId(String roomId) {
-        this.roomId = roomId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getChip() {
-        return chip;
-    }
-
-    public void setChip(double chip) {
-        this.chip = chip;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
 }

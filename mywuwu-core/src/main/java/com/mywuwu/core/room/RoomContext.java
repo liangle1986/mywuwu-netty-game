@@ -61,8 +61,8 @@ public abstract class RoomContext {
         this.roomManager = roomManager;
     }
 
-    public RoomContext() {
-    }
+//    public RoomContext() {
+//    }
 
     public void sendAll(Object o, int protocol) {
         for (Object playerObject : this.playerList) {

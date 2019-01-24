@@ -19,7 +19,7 @@ import java.util.Map;
 @Component
 public class  JwtTokenUtil {
 
-    private final String CLAIM_KEY_USERNAME = "sub";
+    private final String CLAIM_KEY_USERNAME = "LIANGLELE";
     private final String CLAIM_KEY_CREATED = "created";
 
     @Value("${jwt.secret}")

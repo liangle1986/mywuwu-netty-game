@@ -23,12 +23,4 @@ public class LoginResponse {
 
     private List<GameServerList> gameServerLists;
 
-    public LoginResponse(String name, String nickName, String token, double balance, int cardNumber, List<GameServerList> gameServerLists) {
-        this.name = name;
-        this.nickName = nickName;
-        this.token = token;
-        this.balance = balance;
-        this.cardNumber = cardNumber;
-        this.gameServerLists = gameServerLists;
-    }
 }

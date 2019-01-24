@@ -16,13 +16,13 @@ public class Poker {
     private PokerNumber number;
     private PokerType cardType;
 
-    public Poker(PokerNumber number, PokerType cardType) {
-        this.number = number;
-        this.cardType = cardType;
-    }
+//    public Poker(PokerNumber number, PokerType cardType) {
+//        this.number = number;
+//        this.cardType = cardType;
+//    }
 
-    public Poker() {
-    }
+//    public Poker() {
+//    }
 
     public PokerNumber getNumber() {
         return number;

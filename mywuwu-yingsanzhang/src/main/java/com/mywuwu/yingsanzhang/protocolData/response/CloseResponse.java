@@ -13,8 +13,4 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class CloseResponse {
     String name;
-
-    public CloseResponse(String name) {
-        this.name = name;
-    }
 }

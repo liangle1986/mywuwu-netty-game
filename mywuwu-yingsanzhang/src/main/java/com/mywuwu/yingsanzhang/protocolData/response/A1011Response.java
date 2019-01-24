@@ -17,8 +17,4 @@ public class A1011Response {
     private double zhuoMain;
     YingSanZhangPlayer[] players;
 
-    public A1011Response(double zhuoMain, YingSanZhangPlayer[] players) {
-        this.zhuoMain = zhuoMain;
-        this.players = players;
-    }
 }

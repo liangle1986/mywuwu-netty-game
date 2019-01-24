@@ -15,8 +15,8 @@ public class A1012Response {
     private String name;
     private String roomId;
 
-    public A1012Response(String name, String roomId) {
-        this.name = name;
-        this.roomId = roomId;
-    }
+//    public A1012Response(String name, String roomId) {
+//        this.name = name;
+//        this.roomId = roomId;
+//    }
 }
