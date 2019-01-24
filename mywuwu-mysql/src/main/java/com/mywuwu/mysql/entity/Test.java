@@ -1,5 +1,7 @@
 package com.mywuwu.mysql.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 public class Test {

@@ -14,13 +14,17 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginResponse {
-    private String name;
-    private String nickName;
-    private String token;
-    private double balance;
-    private int cardNumber;
-
+public class LoginResponse<T> {
+//    private String name;
+//    private String nickName;
+//    private String token;
+//    private double balance;
+//    private int cardNumber;
+    private int code;
+    private String desc;
+    private int gameType;
+    private int msgType;
     private List<GameServerList> gameServerLists;
+    private T data;
 
 }

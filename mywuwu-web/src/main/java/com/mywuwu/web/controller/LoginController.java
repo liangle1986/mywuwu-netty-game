@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+
 /**
  * @Auther: 梁乐乐
  * @Date: 2019/1/23 14:59
@@ -42,9 +43,9 @@ public class LoginController {
     @Autowired
     public LoginController(
             TestService testService,
-                           GameConfig config,
-                           RedisTemplate redisTemplate,
-                           JwtTokenUtil jwtTokenUtil
+            GameConfig config,
+            RedisTemplate redisTemplate,
+            JwtTokenUtil jwtTokenUtil
     ) {
         this.testService = testService;
         this.config = config;
@@ -54,37 +55,33 @@ public class LoginController {
     }
 
 
-    @PostMapping("api/login")
+    @PostMapping("api/login1")
     public Optional<LoginResponse> login(@RequestBody LoginRequest loginForm) {
         List<Test> test = testService.getFindAll();
 //        UserModel userModel = userRepository.findByNameAndPassword(loginForm.getName(), loginForm.getPassword());
         if (test != null && test.size() > 0) {
             String token = "";
 //                    jwtTokenUtil.generateToken(test.get(0).getName());
-            LoginResponse loginResponse = new LoginResponse(test.get(0).getName(),
-                    test.get(0).getName(),
-                    token,
-                    0,
-                    0,
-                    config.getServers()
-            );
+//            LoginResponse loginResponse = new LoginResponse(test.get(0).getName(),
+//                    test.get(0).getName(),
+//                    token,
+//                    0,
+//                    0,
+//                    config.getServers()
+//            );
 
-            return Optional.of(loginResponse);
+            return Optional.of(new LoginResponse());
         }
         return Optional.empty();
     }
 
-    @GetMapping("api/test")
-    public Optional<LoginResponse> getTest(){
+    @GetMapping("api/login")
+    public Optional<LoginResponse> getTest() {
         List<Test> test = testService.getFindAll();
         if (test != null && test.size() > 0) {
             String token = jwtTokenUtil.generateToken(test.get(0).getName());
-            LoginResponse loginResponse = new LoginResponse(test.get(0).getName(),
-                    test.get(0).getName(),
-                    token,
-                    0,
-                    0,
-                    config.getServers()
+            LoginResponse loginResponse = new LoginResponse<Test>(0, null, 0, 0,
+                    config.getServers(), test.get(0)
             );
 
             return Optional.of(loginResponse);
